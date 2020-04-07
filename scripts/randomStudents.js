@@ -6,7 +6,6 @@ const students = [
   "Robert Carter",
   "Volha Charnysh",
   "Peng Chen",
-  "Ryan Creamer",
   "Paul Depew",
   "Haley Griffin",
   "Kenneth Harman",
@@ -15,7 +14,7 @@ const students = [
   "Matthew Stewart",
   "Joseph Zabaleta",
   "Peyton Cysewski",
-  "Brandom Gibbs",
+  "Brandon Gibbs",
   "Joseph Lee",
 ];
 const used = [];
@@ -50,6 +49,11 @@ function getRandomPairs() {
       results.push(`${student1} | ${student2}`);
       pool.splice(pool.indexOf(student1), 1);
       pool.splice(pool.indexOf(student2), 1);
+    } else if (student1 === student2 && pool.length === 1) {
+      let pairIndex = Math.floor(Math.random() * Math.floor(results.length));
+      let pair = results[pairIndex];
+      pool.splice(pool.indexOf(student1), 1);
+      results[pairIndex] = pair += ` | ${student1}`;
     }
   }
   return results;
