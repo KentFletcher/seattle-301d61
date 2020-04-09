@@ -4,6 +4,9 @@
 - We spot a `for` `in` loop
 
 ```js
+let DOCTORS = [
+  {'actor': "SOME NAME"}
+]
 
 for (var doc in DOCTORS) {
   console.log(doc['actors']);
@@ -113,3 +116,4 @@ Engine.render(template, values);
 ```
 
 - Mustache!!
+  - Our Engine that will consume HTML templates and inject JS values into them.
