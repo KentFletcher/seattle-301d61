@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js'></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  img {
+    width: 200px;
+  }
+
+  div {
+    border: thin solid red;
+    height: 1000px;
+  }
+
+  #two {
+    width: 300px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+</style>
+
+<body>
+  <div class="flex">
+    <img src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/662678">
+    <img id='two'
+      src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/662678">
+    <img src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/662678">
+  </div>
+  <div id="root">
+    <script id="image-template" type="x-tmpl-mustache">
+      <section>
+        <h2>{{name}}</h2>
+        <p></p>
+      </section>
+    </script>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

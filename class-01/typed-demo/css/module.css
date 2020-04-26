@@ -1,0 +1,23 @@
+nav {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  line-height: 50px;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}

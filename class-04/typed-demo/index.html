@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Click tracker</title>
+</head>
+<style>
+  #container {
+    display: inline-grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: 2fr 1fr 100px;
+    grid-template-rows: 5fr 1fr 100px;
+  }
+
+  div div {
+    background-color: black;
+    color: white;
+    border: thin solid red;
+  }
+
+  .a {
+    grid-column: 1 / 4;
+  }
+</style>
+
+<body>
+  <div id="container">
+    <div class="item a">A</div>
+    <div class="item b">B</div>
+    <div class="item c">C</div>
+    <div class="item d">D</div>
+    <div class="item e">E</div>
+    <div class="item f">F</div>
+    <div class="item g">G</div>
+  </div>
+</body>
+
+</html>
